@@ -13,24 +13,24 @@ export default function Home() {
   return (
     <div className="space-y-16 pb-16">
       {/* Hero Section */}
-      <section className="relative bg-blue-900 py-24 sm:py-32 overflow-hidden">
+      <section className="relative bg-blue-900 py-12 sm:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-white mb-6">
             Konfrans Materialları Mərkəzi
           </h1>
-          <p className="mt-6 text-lg leading-8 text-blue-100 max-w-2xl mx-auto">
+          <p className="mt-6 text-base sm:text-lg leading-8 text-blue-100 max-w-2xl mx-auto">
             Sumqayıt Dövlət Universitetində keçirilən bütün konfransların tezislərinə, 
             materiallarına və əlaqəli elanlara vahid çıxış nöqtəsi.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link href="/konfrans-ve-tezisler">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
+            <Link href="/konfrans-ve-tezisler" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50">
                 Konfranslara baxın
               </Button>
             </Link>
-            <Link href="/konfrans-materiallari">
-              <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10 hover:text-white bg-transparent">
+            <Link href="/konfrans-materiallari" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto text-white border-white hover:bg-white/10 hover:text-white bg-transparent">
                 Materiallar <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* Featured Sections Grid */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           
           {/* Latest Conferences */}
