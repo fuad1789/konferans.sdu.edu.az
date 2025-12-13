@@ -1,0 +1,10 @@
+﻿lib/data.ts(1,60): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+src/app/konfrans-ve-tezisler/[id]/ConferenceClient.tsx(4,36): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+src/app/konfrans-ve-tezisler/[id]/ConferenceClient.tsx(24,27): error TS7006: Parameter 'author' implicitly has an 'any' type.
+src/app/konfrans-ve-tezisler/[id]/ConferenceClient.tsx(25,28): error TS7006: Parameter 'kw' implicitly has an 'any' type.
+src/app/konfrans-ve-tezisler/[id]/ConferenceClient.tsx(107,46): error TS7006: Parameter 'kw' implicitly has an 'any' type.
+src/app/konfrans-ve-tezisler/page.tsx(19,96): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/app/konfrans-ve-tezisler/page.tsx(19,96): error TS18048: 'b' is possibly 'undefined'.
+src/app/konfrans-ve-tezisler/page.tsx(19,100): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/app/konfrans-ve-tezisler/page.tsx(19,100): error TS18048: 'a' is possibly 'undefined'.
+src/app/konfrans-ve-tezisler/page.tsx(25,51): error TS18048: 'conf.year' is possibly 'undefined'.
