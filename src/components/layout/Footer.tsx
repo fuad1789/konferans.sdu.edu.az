@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold leading-8 mb-4">Sumqayıt Dövlət Universiteti</h3>
             <p className="text-sm leading-6 text-gray-300">
-              Konfrans materialları mərkəzi
+              Konfrans Materialları
             </p>
             <div className="mt-4 flex space-x-4">
               {/* Social icons could go here */}
