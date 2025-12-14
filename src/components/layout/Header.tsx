@@ -2,14 +2,15 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
-
+import logo from "../../../public/images/SDU-loqo.jpg";
 
 const navigation = [
   { name: 'Ana səhifə', href: '/' },
-  { name: 'Konfrans və tezislər', href: '/konfrans-ve-tezisler' },
+  { name: 'Konfranslar', href: '/konfrans-ve-tezisler' },
   { name: 'Konfrans materialları', href: '/konfrans-materiallari' },
   { name: 'Elanlar', href: '/elanlar' },
   { name: 'Əlaqə', href: '/elaqe' },
@@ -23,10 +24,16 @@ export default function Header() {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-blue-600" />
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
+              <Image 
+                src={logo} 
+                alt="SDU Logo" 
+                width={50} 
+                height={50} 
+                className="h-10 w-auto"
+              />
             <span className="font-bold text-xl text-gray-900 leading-tight">
-              Sumqayıt Dövlət<br />Universiteti
+              Konfrans<br />Materialları
             </span>
           </Link>
         </div>
@@ -63,9 +70,17 @@ export default function Header() {
         <div className="lg:hidden" role="dialog" aria-modal="true">
           <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 w-full h-full">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                <GraduationCap className="h-8 w-8 text-blue-600" />
-                <span className="font-bold text-lg text-gray-900">SDU Konfrans</span>
+              <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
+                <div className="bg-blue-900 rounded-lg p-1.5 shadow-sm">
+                  <Image 
+                    src="/images/logo_b.png" 
+                    alt="SDU Logo" 
+                    width={40} 
+                    height={40} 
+                    className="h-8 w-auto"
+                  />
+                </div>
+                <span className="font-bold text-lg text-gray-900">Konfrans Materialları</span>
               </Link>
               <button
                 type="button"

@@ -77,12 +77,9 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center z-10">
-          <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium text-blue-200 bg-blue-900/50 ring-1 ring-inset ring-blue-700/50 mb-6 backdrop-blur-sm shadow-sm">
-              <FaCertificate className="mr-2 h-4 w-4 text-blue-400" />
-              Elmi Tədqiqatlar və İnnovasiyalar
-          </div>
+      
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 drop-shadow-lg">
-            Konfrans və Elmi <br className="hidden sm:block" /> <span className="text-blue-300">Materiallar</span>
+            Konfrans və Tezis <br className="hidden sm:block" /> <span className="text-blue-300">Materialları</span>
           </h1>
           <p className="mt-4 text-lg leading-8 text-blue-100 max-w-2xl mx-auto font-light opacity-90">
             Sumqayıt Dövlət Universitetinin elmi bazası. Bütün konfrans tezisləri, 
